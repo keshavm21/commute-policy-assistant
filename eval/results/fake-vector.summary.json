@@ -1,0 +1,53 @@
+{
+  "llm": "fake",
+  "llm_client": "fake_extractive",
+  "retrieval_mode": "vector",
+  "cases": 34,
+  "pass_rate": 0.853,
+  "retrieval": {
+    "hit_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "isolation_rate": 1.0,
+    "chunks_checked": 102
+  },
+  "answer": {
+    "answerable_status_ok": 1.0,
+    "not_covered_status_ok": 0.167,
+    "answerable_fully_correct": 1.0,
+    "forbidden_content_violations": 0,
+    "isolation_or_freshness_violations": 0
+  },
+  "budgets": {
+    "max_llm_calls": 1,
+    "mean_llm_calls": 0.94,
+    "max_cited_chunks": 1,
+    "latency_ms_p50": 80.2,
+    "latency_ms_p95": 102.0,
+    "latency_ms_max": 130.8,
+    "latency_samples": 170
+  },
+  "outcome_reasons": {
+    "answered": 32,
+    "gate": 2
+  },
+  "all_runs": {
+    "runs": 5,
+    "pass_rate_per_run": [
+      0.853,
+      0.853,
+      0.853,
+      0.853,
+      0.853
+    ],
+    "failures": {
+      "z11-not-covered-pet": 5,
+      "z12-not-covered-metro": 5,
+      "m08-not-covered-client-site": 5,
+      "k03-not-covered-airport": 5,
+      "k07-not-covered-guest": 5
+    },
+    "try_again_count": 0,
+    "questions": 170
+  }
+}

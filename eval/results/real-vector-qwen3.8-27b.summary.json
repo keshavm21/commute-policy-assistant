@@ -1,0 +1,48 @@
+{
+  "llm": "real",
+  "llm_client": "openai_compatible",
+  "retrieval_mode": "vector",
+  "cases": 34,
+  "pass_rate": 0.971,
+  "retrieval": {
+    "hit_at_1": 1.0,
+    "hit_at_3": 1.0,
+    "mrr": 1.0,
+    "isolation_rate": 1.0,
+    "chunks_checked": 102
+  },
+  "answer": {
+    "answerable_status_ok": 0.958,
+    "not_covered_status_ok": 1.0,
+    "answerable_fully_correct": 0.958,
+    "forbidden_content_violations": 0,
+    "isolation_or_freshness_violations": 0
+  },
+  "budgets": {
+    "max_llm_calls": 1,
+    "mean_llm_calls": 0.94,
+    "max_cited_chunks": 2,
+    "latency_ms_p50": 462.4,
+    "latency_ms_p95": 696.0,
+    "latency_ms_max": 1232.3,
+    "latency_samples": 102
+  },
+  "outcome_reasons": {
+    "answered": 23,
+    "model_not_covered": 9,
+    "gate": 2
+  },
+  "all_runs": {
+    "runs": 3,
+    "pass_rate_per_run": [
+      0.971,
+      0.971,
+      0.971
+    ],
+    "failures": {
+      "z14-conditional-escort": 3
+    },
+    "try_again_count": 0,
+    "questions": 102
+  }
+}

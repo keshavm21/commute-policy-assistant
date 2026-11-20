@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Local secrets (commit only .env.example)
+.env
+
+# Runtime data: Chroma store and version registry, rebuilt from data/policies on start
+var/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

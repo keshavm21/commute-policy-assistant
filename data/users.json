@@ -1,0 +1,8 @@
+[
+  {"employee_id": "Z1001", "name": "Asha (Zentrix)", "company_id": "zentrix", "role": "employee"},
+  {"employee_id": "Z9001", "name": "Zentrix Admin", "company_id": "zentrix", "role": "admin"},
+  {"employee_id": "M2001", "name": "Ravi (Meridian)", "company_id": "meridian", "role": "employee"},
+  {"employee_id": "M9001", "name": "Meridian Admin", "company_id": "meridian", "role": "admin"},
+  {"employee_id": "K3001", "name": "Neha (Kestrel)", "company_id": "kestrel", "role": "employee"},
+  {"employee_id": "K9001", "name": "Kestrel Admin", "company_id": "kestrel", "role": "admin"}
+]

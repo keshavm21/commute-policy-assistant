@@ -1,0 +1,21 @@
+services:
+  api:
+    build: .
+    image: commute-policy-assistant
+    ports:
+      - "8000:8000"
+    # .env is optional: without it the app runs with the offline fake LLM.
+    env_file:
+      - path: .env
+        required: false
+    volumes:
+      - app-data:/app/var  # Chroma store + version registry survive restarts
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 3s
+      retries: 6
+      start_period: 20s
+
+volumes:
+  app-data:
