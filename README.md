@@ -7,6 +7,8 @@ fails with a clear "try again" instead of hanging or guessing.
 Stack: Python 3.12, FastAPI, Chroma (embedded), all-MiniLM-L6-v2 embeddings (local ONNX),
 any OpenAI-compatible LLM (default: `qwen/qwen3.8-27b` on Groq's free tier), PyJWT.
 
+**Demo video:** https://youtu.be/wMM6Gdu827E
+
 **Measured with the real LLM** (34-case eval set × 3 runs, details in
 [eval/REPORT.md](eval/REPORT.md)):
 - 99/102 cases passed, with zero chunks from another company or an old version, and zero
